@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Cypher Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
 </head>
 <body>
     <aside>
         <a href="#"><img src="./img/69644176.jpg" alt="Logo de Cypher Project"></a>
         <h1>Cypher Project</h1>
+        <p>cc je m'appelle archie merde</p>
         <div>
-            <iframe src="https://discord.com/widget?id=732692288139952219&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <a data-tippy-content="Github" href="https://github.com/Cypher-Project" target="_blank"><i class="fab fa-github"></i></a>
+            <a data-tippy-content="Discord" href="https://discord.gg/kK3kdFZ" target="_blank"><i class="fab fa-discord"></i></a>
+            <a data-tippy-content="Mail" href="mailto:cipherproject@protonmail.com"><i class="fas fa-envelope"></i></a>
         </div>
     </aside>
     <div>
@@ -29,5 +36,12 @@
             <p>Présentation du site et du C-P</p>
         </main>
     </div>
+    <script>
+        let instances = tippy('[data-tippy-content]', {
+            content: 'My tooltip!',
+            animation: 'scale',
+            placement: 'bottom'
+        });
+      </script>
 </body>
 </html>
